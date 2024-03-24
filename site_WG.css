@@ -196,57 +196,27 @@
 
 
 
-    @media only screen and (max-width: 768px) {
-
-    .perfil {
-      width: 100px;
-      height: 100px;
-      margin-top: -50px;
+    @media only screen and (max-width: 600px) {
+        .perfil {
+            width: 120px;
+            height: 120px;
+            margin-top: -60px;
+        }
+    
+        .titulo {
+            font-size: 22px;
+        }
+    
+        .texto,
+        .texto1,
+        .texto2 {
+            font-size: 18px;
+            margin: 10px auto;
+            max-width: 90%;
+        }
+    
+        .image-container img {
+            width: calc(50% - 10px);
+        }
     }
-  
-    .titulo {
-      font-size: 20px;
-    }
-  
-    .texto,
-    .texto1,
-    .texto2 {
-      font-size: 16px;
-    }
-  
-    .buttons {
-      position: static;
-      display: flex;
-      justify-content: center;
-      margin-top: 10px;
-    }
-  
-    .button {
-      margin: 0 5px;
-    }
-  
-    .button img {
-      width: 50px;
-      height: 50px;
-    }
-  
-    .container {
-      max-width: 90%;
-    }
-  
-    .image-container img {
-      width: 45%;
-    }
-  
-    .texto,
-    .texto1,
-    .texto2 {
-      margin: 10px auto;
-      text-align: left;
-    }
-  
-    footer {
-      font-size: 16px;
-    }
-  }
   
