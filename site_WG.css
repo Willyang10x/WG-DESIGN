@@ -1,7 +1,7 @@
     body {
         margin: 0;
         padding: 0;
-        background: linear-gradient(#000000, #0011ff,#000000);
+        background: linear-gradient(to bottom, #009dff, #00e1ff);
         font-family: Arial, sans-serif; 
         transition: background-color 0.5s ease;
         color: #ffffff;
@@ -155,7 +155,7 @@
     }
 
     footer{
-        background: linear-gradient(500deg, #000000, #0011ff,#000000);
+        background: linear-gradient(to bottom, #ffffff, #0077ff6c);
         font-family: Impact, Impact, HaettenschweilerS, 'Arial Narrow Bold', sans-serif;
         color: #ffffff;
         text-align: center;
