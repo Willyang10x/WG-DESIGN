@@ -8,11 +8,11 @@
     }
 
     .dark-mode {
-        background: linear-gradient(#0011ff,#ffffff,#0011ff);
+        background: linear-gradient(#009dff,#ffffff,#009dff);
     }
 
     body.dark-mode {
-        color: #000000; 
+        color: #000000;                     
     }
     
     body.dark-mode p {
@@ -25,8 +25,11 @@
         color: #000000; 
     }
     
-
+    .mode-toggle-btn img:hover {
+        transform: scale(1.2);
+    }
     .mode-toggle-btn {
+        margin-top: 10px;
         background: transparent;
         border: none;
         padding: 0;
@@ -34,8 +37,9 @@
     }
 
     .mode-toggle-btn img {
-        width: 75px;
-        height: auto;
+        width: 60px;
+        height: 60px;
+        transition: transform 0.3s ease;
     }
 
     .containerButtons {
@@ -86,8 +90,19 @@
         border-radius: 10px; 
         background-color: transparent
     }
-
-
+    
+    .image-container img {
+        width: calc(25% - 10px);
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .image-container img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    }
+    
     .modal {
         display: none; 
         position: fixed; 
@@ -175,22 +190,25 @@
     }
 
     .buttons {
-        position: absolute;
-        top: 10px; 
-        right: 20px; 
+        position: fixed;
+        top: 20px;
+        right: 20px;
     }
-
-    .button {
-        background-color: transparent;
+    
+    .buttons .button {
+        background: none;
         border: none;
-        padding: 0;
-        margin: 0;
         cursor: pointer;
     }
-
-    .button img {
-        width: 70px; 
-        height: 70px; 
+    
+    .buttons .button img {
+        width: 60px;
+        height: 60px;
+        transition: transform 0.3s ease;
+    }
+    
+    .buttons .button img:hover {
+        transform: scale(1.2);
     }
 
 
