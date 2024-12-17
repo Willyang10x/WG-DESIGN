@@ -140,31 +140,32 @@
         color: #009dff;
         font-family: 'Poppins', Arial, sans-serif;
         font-size: 22px;
-        line-height: 1.8; /* Melhor espaçamento para leitura */
+        line-height: 1.6; 
         max-width: 800px;
-        margin: 20px auto;
-        text-align: justify; /* Alinha o texto nas bordas para maior formalidade */
-        padding: 20px 30px;
-        background: rgba(255, 255, 255, 0.9); /* Fundo com transparência leve */
+        margin: 20px auto; 
+        text-align: justify; 
+        padding: 20px 30px; 
+        background: rgba(255, 255, 255, 0.9); 
         border-radius: 12px;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Sombra mais sutil */
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
     }
     
-    .texto1 p, .texto2 p {
-        margin: 15px 0;
+    .texto p, .texto1 p, .texto2 p {
+        margin: 15px 0; 
+        text-indent: 20px; 
     }
-
+    
     h3, h4 {
         text-align: center;
     }
     
     .texto1 {
         text-align: center;
-        font-size: 24px; /* Maior que os textos regulares */
+        font-size: 24px; 
         font-weight: bold;
-        color: #006db3; /* Tom mais escuro para dar contraste */
-        text-transform: uppercase; /* Torna o texto do título mais chamativo */
-        letter-spacing: 1.5px; /* Espaçamento entre letras */
+        color: #006db3; 
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
     }
     
     footer {
@@ -177,6 +178,7 @@
         box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
         border-radius: 0 0 10px 10px;
     }
+    
     
     
 
