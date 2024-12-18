@@ -1,3 +1,5 @@
+@import url(/Components/Footer/footer.css);
+    
     body {
         margin: 0;
         padding: 0;
@@ -168,9 +170,6 @@
         letter-spacing: 1.5px;
     }
     
-
-    
-
     .container {
         position: relative;
         text-align: center;
