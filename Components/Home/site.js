@@ -1,3 +1,19 @@
+// Carregar o footer dinamicamente
+document.addEventListener('DOMContentLoaded', function () {
+  fetch('/Components/Footer/footer.html') // Certifique-se de que o caminho está correto
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Erro ao carregar o footer: ' + response.status);
+      }
+      return response.text();
+    })
+    .then(data => {
+      const footerContainer = document.createElement('footer');
+      footerContainer.innerHTML = data;
+      document.body.appendChild(footerContainer);
+    })
+    .catch(error => console.error(error));
+});
 const modeToggleBtn = document.getElementById("modeToggleBtn");
 const body = document.body;
 

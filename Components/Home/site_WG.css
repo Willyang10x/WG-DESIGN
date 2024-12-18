@@ -168,18 +168,7 @@
         letter-spacing: 1.5px;
     }
     
-    footer {
-        background: linear-gradient(to bottom, #ffffff, #009dff);
-        color: #ffffff;
-        font-family: 'Roboto', Arial, sans-serif;
-        text-align: center;
-        font-size: 18px;
-        padding: 15px;
-        box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
-        border-radius: 0 0 10px 10px;
-    }
-    
-    
+
     
 
     .container {
