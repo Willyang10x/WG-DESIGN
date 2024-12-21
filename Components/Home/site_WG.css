@@ -107,6 +107,7 @@
         z-index: 1; 
         left: 0;
         top: 0;
+        padding: 50px;
         width: 100%;
         height: 100%;
         overflow: auto; 
@@ -118,6 +119,8 @@
         display: block;
         width: 1000%; 
         max-width: 500px; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
       }
       
       
@@ -163,7 +166,7 @@
     
     .texto1 {
         text-align: center;
-        font-size: 24px; 
+        font-size: 22px;
         font-weight: bold;
         color: #006db3; 
         text-transform: uppercase;
@@ -201,8 +204,31 @@
         transform: scale(1.2);
     }
 
-
-
+    .location-section {
+        margin-top: 200px;
+        text-align: center;
+        margin: 0; 
+        padding: 20px 0; 
+        background: color #009dff;
+    }
+    
+    .location-title {
+        font-size: 28px;
+        font-weight: bold;
+        color: #ffffff;
+        margin-bottom: 20px;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    .map-container {
+        width: 100%;
+        max-width: 1500px;
+        margin: 0 auto; 
+        border-radius: 10px; 
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    }
+    
 
     @media only screen and (max-width: 600px) {
         .perfil {

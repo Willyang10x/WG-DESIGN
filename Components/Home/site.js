@@ -1,8 +1,6 @@
-// Carregar o footer dinamicamente
 document.addEventListener('DOMContentLoaded', function () {
-  // Verifique se o footer já foi carregado
   if (!document.querySelector('footer')) {
-    fetch('/Components/Footer/footer.html') // Certifique-se de que o caminho está correto
+    fetch('/Components/Footer/footer.html')
       .then(response => {
         if (!response.ok) {
           throw new Error('Erro ao carregar o footer: ' + response.status);
@@ -35,13 +33,13 @@ function openModal(imgElement) {
     modalImg.src = imgElement.src;
   }
   
-  // Função para fechar o modal
+ 
   function closeModal() {
     var modal = document.getElementById("myModal");
     modal.style.display = "none";
   }
   
-  // Fechar o modal quando clicar fora da imagem
+
   window.onclick = function(event) {
     var modal = document.getElementById("myModal");
     if (event.target == modal) {
