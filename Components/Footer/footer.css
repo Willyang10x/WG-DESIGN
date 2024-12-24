@@ -21,7 +21,7 @@
     background: linear-gradient(90deg, rgba(0, 109, 179, 1) 0%, rgba(0, 157, 255, 1) 100%); /* Suas cores */
     border-radius: 15px 15px 0 0;
     color: #fff;
-    margin-top: -20px;
+    margin-top: 20px;
     padding: 20px;
   }
   
@@ -98,18 +98,19 @@
     transition: background-color 0.3s;
   }
 
-  .after-location {
-    text-align: center;
-    background-color: #ffffff; /* Define fundo branco */
-    padding: px; /* Espaçamento interno */
-    color: #009dff; /* Define a cor do texto como preto */
-    font-family: 'Arial', sans-serif;
-    padding: 15%;
-}
-
-  .after-location p{
-    margin: 10px;
-}
+  .banner {
+    width: 100%; /* Ocupa toda a largura do container */
+    max-width: 100%; /* Limite de largura para não expandir demais */
+    margin: 0 auto; /* Centraliza o banner */
+    overflow: hidden; /* Garante que não haverá scroll horizontal */
+  }
+  
+  .banner img {
+    width: 100%; /* Ajusta o banner à largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços extras abaixo da imagem */
+  }
+  
 
   .footer-subscribe button:hover {
     background-color: #0e4a6e; 
