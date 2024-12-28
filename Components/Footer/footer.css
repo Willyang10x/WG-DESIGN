@@ -48,7 +48,7 @@
   }
   
   .footer-logo a:hover .company-desc {
-    color: #00e1ff; /* Altere para a cor desejada no hover */
+    color: #00e1ff; 
   }
   
   
@@ -99,16 +99,16 @@
   }
 
   .banner {
-    width: 100%; /* Ocupa toda a largura do container */
-    max-width: 100%; /* Limite de largura para não expandir demais */
-    margin: 0 auto; /* Centraliza o banner */
-    overflow: hidden; /* Garante que não haverá scroll horizontal */
+    width: 100%; 
+    max-width: 100%; 
+    margin: 0 auto; 
+    overflow: hidden; 
   }
   
   .banner img {
-    width: 100%; /* Ajusta o banner à largura do container */
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Remove espaços extras abaixo da imagem */
+    width: 100%; 
+    height: auto; 
+    display: block; 
   }
   
 
@@ -147,14 +147,93 @@
   }
   
 
-  @media (max-width: 768px) {
-    .footer-container {
+  /* Responsividade para dispositivos maiores que 768px, como tablets em orientação paisagem */
+@media (max-width: 1024px) {
+  .footer-container {
       flex-direction: column;
       text-align: center;
-    }
-  
-    .footer-logo, .footer-info, .footer-subscribe, .footer-social {
-      flex: 1 1 100%;
-    }
   }
+
+  .footer-logo, 
+  .footer-info, 
+  .footer-subscribe, 
+  .footer-social {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+  }
+
+  .footer-subscribe form {
+      align-items: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-logo, 
+  .footer-info, 
+  .footer-subscribe, 
+  .footer-social {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+  }
+
+  .footer-subscribe form {
+      align-items: center;
+  }
+
+  .footer-social a {
+      font-size: 20px;
+      margin: 0 5px;
+  }
+
+  .footer-copyright {
+      font-size: 12px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .footer-social a {
+      font-size: 18px;
+      margin: 0 5px;
+  }
+
+  .footer-container {
+      padding: 20px 10px;
+  }
+
+  .footer-subscribe input,
+  .footer-subscribe button {
+      width: 90%;
+  }
+
+  .footer-copyright {
+      font-size: 10px;
+  }
+
+  .footer-info p {
+      font-size: 12px; 
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .footer-container {
+      padding: 30px;
+  }
+
+  .footer-logo img {
+      max-width: 150px;
+  }
+
+  .footer-info p, .footer-social p {
+      font-size: 16px; 
+  }
+}
+
   
