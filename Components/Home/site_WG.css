@@ -82,18 +82,19 @@
 
 
     .image-container {
-        overflow: hidden;
-        text-align: center;
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 10px;
+        padding: 20px;
     }
     
     .image-container img {
-        display: inline-block; 
-        width: calc(20% - 10px); 
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        box-sizing: border-box;
-        margin: 5px; 
+        width: calc(25% - 10px); 
+        max-width: 250px; 
+        height: auto; 
         border-radius: 10px;
-        background-color: transparent;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     
     .image-container img:hover {
@@ -146,7 +147,7 @@
         font-family: 'Poppins', Arial, sans-serif;
         font-size: 22px;
         line-height: 1.6; 
-        max-width: 800px;
+        max-width: 1290px;
         margin: 20px auto; 
         text-align: justify; 
         padding: 20px 30px; 
@@ -183,7 +184,7 @@
     }
 
     .buttons {
-        position: fixed;
+        position: absolute;
         top: 20px;
         right: 20px;
     }
@@ -209,7 +210,7 @@
         text-align: center;
         margin: 0; 
         padding: 20px 0; 
-        background: color #009dff;
+        background: #009dff;
     }
     
     .location-title {
@@ -253,4 +254,87 @@
             width: calc(50% - 10px);
         }
     }
-  
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        padding: 10px;
+        max-width: 90%;
+    }
+
+    .titulo {
+        font-size: 24px;
+    }
+
+    .texto, .texto1, .texto2 {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .buttons .button img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .perfil {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .image-container img {
+        width: calc(33.33% - 10px); 
+    }
+
+    .texto, .texto1, .texto2 {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .image-container img {
+        width: calc(50% - 10px); 
+    }
+
+    .buttons .button img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .texto, .texto1, .texto2 {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+
+    .titulo {
+        font-size: 20px;
+    }
+
+    .perfil {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .image-container img {
+        width: 100%; 
+    }
+
+    .texto, .texto1, .texto2 {
+        font-size: 12px;
+    }
+
+    .buttons .button img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .map-container iframe {
+        height: 250px;
+    }
+}
