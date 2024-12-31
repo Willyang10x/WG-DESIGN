@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos Feitos</title>
+  <link rel="icon" type="image/x-icon" href="/Assets/icons/logo wg.png">
+  <link rel="stylesheet" href="projetos.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <div id="back">
+        <a id="button-back" onclick="window.history.go(-1)">
+            <img src="/assets/icons/seta voltar (2).png" alt="Voltar a página anterior">
+        </a>
+    </div>
+
+  <section class="projects-section">
+    <h1 class="section-title">Projetos Realizados</h1>
+    <p class="section-subtitle">Confira alguns dos meus projetos mais recentes, com designs exclusivos e soluções criativas para os meus clientes.</p>
+    
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="/Assets/imagenS/img-Essencia.jpg" alt="Projeto 1" class="project-image">
+        <div class="project-info">
+          <h2 class="project-title">Projeto 1: Criação do site Essência Tropical</h2>
+          <p class="project-description">Criação de um site completo com design responsivo e otimizado para diversos dispositivos.</p>
+          <button class="view-details" onclick="viewProject(1)">Ver Detalhes</button>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="/Assets/icons/logo-easy.png" alt="Projeto 2" class="project-image">
+        <div class="project-info">
+          <h2 class="project-title">Projeto 2: Easy sites solutions</h2>
+          <p class="project-description">Desenvolvimento de uma agência de sites e mídia digital, otimização de tempo e custo benefício no mercado digital.</p>
+          <button class="view-details" onclick="viewProject(2)">Ver Detalhes</button>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="/Assets/icons/logo wg.png" alt="Projeto 3" class="project-image">
+        <div class="project-info">
+          <h2 class="project-title">Projeto 3: Aplicativo Móvel</h2>
+          <p class="project-description">Aplicativo móvel de gestão de tarefas, com uma interface simples e fácil de usar.</p>
+          <button class="view-details" onclick="viewProject(3)">Ver Detalhes</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="projectModal" class="modal">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <div id="modalContent" class="modal-content">
+      <!-- O conteúdo do modal será atualizado com JavaScript -->
+    </div>
+  </div>
+  <div id="footer-placeholder"></div>
+
+  <script src="projetos.js"></script>
+</body>
+</html>
