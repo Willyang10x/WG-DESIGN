@@ -122,9 +122,12 @@
         width: 1000%; 
         max-width: 500px; 
         border-radius: 10px; 
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease, opacity 0.3s ease; 
       }
-      
+      .modal-content:hover {
+        transform: scale(1.05); 
+      }
       
       .close {
         position: absolute;
@@ -231,6 +234,66 @@
         overflow: hidden;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
     }
+
+    .back-to-top {
+        display: none; 
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: #ffffff; 
+        color: #00aeff; 
+        border: none;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        font-size: 24px;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        transition: opacity 0.3s, transform 0.3s;
+      }
+      
+      .back-to-top:hover {
+        background-color: #ffffff85; 
+      }
+      
+      .back-to-top:active {
+        transform: scale(0.9); 
+      }
+      
+
+  @media (max-width: 768px) {
+    .back-to-top {
+      bottom: 50px; 
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      right: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .back-to-top {
+      bottom: 70px; 
+      width: 35px;
+      height: 35px;
+      font-size: 18px;
+      right: 10px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .back-to-top {
+      bottom: 80px; 
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+      right: 8px;
+    }
+  }
+      
     
 
     @media only screen and (max-width: 600px) {
@@ -340,3 +403,44 @@
         height: 250px;
     }
 }
+
+@media (max-width: 768px) {
+    .close {
+      font-size: 30px;
+      top: 15px;
+      right: 20px;
+    }
+  
+    .modal-content {
+      max-width: 300px;
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .close {
+      font-size: 30px;
+      top: 20px;
+      right: 15px;
+    }
+  
+    .modal-content {
+      margin-top: 80px; 
+      max-width: 300px; 
+    }
+  }
+  
+  
+  @media (max-width: 320px) {
+    .close {
+      font-size: 20px;
+      top: 5px;
+      right: 10px;
+    }
+  
+    .modal-content {
+      margin-top: 80px; 
+      max-width: 200px;
+    }
+  }
+  

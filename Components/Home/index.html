@@ -12,8 +12,9 @@
 
 
   <button id="modeToggleBtn" class="mode-toggle-btn">
-    <img src="/Assets/icons/interruptor.png" alt="Alterar Modo">
+    <img src="/Assets/icons/interruptor1.png" alt="Alterar Modo" id="modeIcon">
   </button>
+  
 
   <div class="containerButtons">
     <div class="buttons">
@@ -46,7 +47,7 @@
   </div>
 
   <div id="myModal" class="modal">
-    <span class="close">&times;</span>
+    <span class="close" onclick="closeModal()">&times;</span>
     <img class="modal-content" id="img01" alt="Imagem Ampliada">
   </div>
 
@@ -55,12 +56,9 @@
   <div class="image-container">
     
     <img src="/Assets/imagens/post1.png" alt="Arte 1" onclick="openModal(this);">
+    <img src="/Assets/imagens/post1fee.PNG" alt="Arte 4" onclick="openModal(this);">
     <img src="/Assets/imagens/post2.png" alt="Arte 2" onclick="openModal(this);">
     <img src="/Assets/imagens/post3.png" alt="Arte 3" onclick="openModal(this);">
-    <img src="/Assets/imagens/post1fee.PNG" alt="Arte 4" onclick="openModal(this);">
-    <img src="/Assets/imagens/post1fee.PNG" alt="Arte 4" onclick="openModal(this);">
-    <img src="/Assets/imagens/post1fee.PNG" alt="Arte 4" onclick="openModal(this);">
-    <img src="/Assets/imagens/post1fee.PNG" alt="Arte 4" onclick="openModal(this);">
     <img src="/Assets/imagens/post1fee.PNG" alt="Arte 4" onclick="openModal(this);">
   </div>
 
@@ -94,7 +92,7 @@
   </div>
 </div>
 
-
+<button id="backToTop" class="back-to-top" title="Voltar ao topo">&#8679;</button>
 
   <div id="footer-placeholder"></div>
 
