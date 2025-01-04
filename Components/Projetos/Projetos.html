@@ -6,6 +6,7 @@
   <title>Projetos Feitos</title>
   <link rel="icon" type="image/x-icon" href="/Assets/icons/logo wg.png">
   <link rel="stylesheet" href="projetos.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div id="header-placeholder"></div>
@@ -16,12 +17,12 @@
         </a>
     </div>
 
-  <section class="projects-section">
+  <section class="projects-section" data-aos="fade-up">
     <h1 class="section-title">Projetos Realizados</h1>
     <p class="section-subtitle">Confira alguns dos meus projetos mais recentes, com designs exclusivos e soluções criativas para os meus clientes.</p>
     
     <div class="projects-container">
-      <div class="project-card">
+      <div class="project-card" data-aos="fade-right">
         <img src="/Assets/imagens/img-Essencia 1.png" alt="Projeto 1" class="project-image">
         <div class="project-info">
           <h2 class="project-title">Projeto 1: Criação do site Essência Tropical</h2>
@@ -30,7 +31,7 @@
         </div>
       </div>
     
-      <div class="project-card">
+      <div class="project-card" data-aos="fade-left">
         <img src="/Assets/icons/logo-easy 2.png" alt="Projeto 2" class="project-image">
         <div class="project-info">
           <h2 class="project-title">Projeto 2: Easy sites solutions</h2>
@@ -39,7 +40,7 @@
         </div>
       </div>
     
-      <div class="project-card">
+      <div class="project-card" data-aos="fade-right">
         <img src="/Assets/icons/logo wg 3.png" alt="Projeto 3" class="project-image">
         <div class="project-info">
           <h2 class="project-title">Projeto 3: Identidade visual WG - Designer</h2>
@@ -48,7 +49,7 @@
         </div>
       </div>
     
-      <div class="project-card">
+      <div class="project-card" data-aos="fade-left">
         <img src="/Assets/imagens/cart-1.JPG" alt="Projeto 4" class="project-image">
         <div class="project-info">
           <h2 class="project-title">Projeto 4: Assistência Técnica Eter Tech</h2>
@@ -57,7 +58,7 @@
         </div>
       </div>
     
-      <div class="project-card">
+      <div class="project-card" data-aos="fade-right">
         <img src="/Assets/icons/logo-ovos.JPG" alt="Projeto 5" class="project-image">
         <div class="project-info">
           <h2 class="project-title">Projeto 5: Granja Ovos Cirilo</h2>
@@ -66,7 +67,7 @@
         </div>
       </div>
     
-      <div class="project-card">
+      <div class="project-card" data-aos="fade-left">
         <img src="/Assets/imagens/jr-img.jpg" alt="Projeto 6" class="project-image">
         <div class="project-info">
           <h2 class="project-title">Projeto 6: JR Premoldados Materiais de contrução</h2>
@@ -78,23 +79,23 @@
     
   </section>
 
-  <section class="art-section">
+  <section class="art-section" data-aos="zoom-in">
     <h2 class="section-title">Artes Criativas</h2>
     <p class="section-subtitle">Veja algumas das artes que desenvolvi para o projeto do curso, escolhi o produto trident.</p>
     <div class="art-container">
-      <a href="/Assets/imagens/trident 1.PNG" target="_blank">
+      <a href="/Assets/imagens/trident 1.PNG" target="_blank" data-aos="fade-up">
         <img src="/Assets/imagens/trident 1.PNG" alt="Arte 1" class="art-image">
       </a>
-      <a href="/Assets/imagens/trident 2.PNG" target="_blank">
+      <a href="/Assets/imagens/trident 2.PNG" target="_blank" data-aos="fade-up">
         <img src="/Assets/imagens/trident 2.PNG" alt="Arte 2" class="art-image">
       </a>
-      <a href="/Assets/imagens/treident 3.PNG" target="_blank">
+      <a href="/Assets/imagens/treident 3.PNG" target="_blank" data-aos="fade-up">
         <img src="/Assets/imagens/treident 3.PNG" alt="Arte 3" class="art-image">
       </a>
     </div>
   </section>
   
-  <section class="video-section">
+  <section class="video-section" data-aos="fade-up">
     <h2 class="section-title">Motion das artes</h2>
     <div class="video-container">
       <video controls width="320" height="240" poster="/Assets/imagens/trident 1.PNG">
@@ -108,7 +109,7 @@
     </div>
   </section>
   
-  <div class="location-section">
+  <div class="location-section" data-aos="zoom-in">
     <h2 class="location-title">Nossa localização em Areial - PB</h2>
     <div class="map-container">
       <iframe 
@@ -133,6 +134,11 @@
     </div>
   </div>
   <div id="footer-placeholder"></div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init(); 
+  </script>
 
   <script src="projetos.js"></script>
 </body>
