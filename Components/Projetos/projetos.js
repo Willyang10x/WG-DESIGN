@@ -70,15 +70,54 @@ document.addEventListener('DOMContentLoaded', function () {
             whatsapp: "https://wa.me/+5583988688864",
         },
         3: {
-            title: "Projeto 3: Aplicativo Móvel",
-            description: "Aplicativo móvel de gestão de tarefas, com uma interface simples e fácil de usar.",
+            title: "Projeto 3: Identidade visual WG - Designer",
+            description: "Identidade visual para minha empresa WG - Designer",
             images: [
-                { src: "/Assets/imagens/post1fee.PNG" , link: "/Assets/imagens/post1fee.PNG" },
-                { src: "/Assets/imagens/post2.PNG", link: "/Assets/imagens/post2.PNG" },
-                { src: "/Assets/imagens/post3.PNG", link: "" },
+                { src: "/Assets/icons/logo wg.png", link: "/Assets/icons/logo wg.png" },
+                { src: "/Assets/imagens/post1fee.PNG", link: "https://www.instagram.com/p/C5tiVBHr6xI/?img_index=1" },
+                { src: "/Assets/imagens/post2.PNG", link: "https://www.instagram.com/p/C5tgXWLr7Kf/" },
+                { src: "/Assets/imagens/post3.PNG", link: "https://www.instagram.com/p/C5tgU9cLZeY/" },
             ],
             instagram: "https://www.instagram.com/willdsg07/",
             whatsapp: "https://wa.me/+5583988688864",
+        },
+        4: {
+          title: "Projeto 4: Assistência Técnica Eter Tech",
+          description: "Desenvolvimento da identidade visual da Assistência Técnica Eter Tech, cartões de vista, logo.",
+          images: [
+            { src: "/Assets/imagens/carrosel-2.GIF", link: "https://www.instagram.com/p/C9Xgh19OWUF/?img_index=1" },
+            { src: "/Assets/imagens/carrosel-1.PNG", link: "https://www.instagram.com/p/C9Xgh19OWUF/?img_index=2" },
+            { src: "/Assets/imagens/carrosel-3.GIF", link: "https://www.instagram.com/p/C9Xgh19OWUF/?img_index=3" },
+            { src: "/Assets/imagens/carrosel-4.GIF", link: "https://www.instagram.com/p/C9Xgh19OWUF/?img_index=4" },
+            { src: "/Assets/imagens/carrosel-5.GIF", link: "https://www.instagram.com/p/C9Xgh19OWUF/?img_index=5" },
+            { src: "/Assets/imagens/carrosel-6.GIF", link: "https://www.instagram.com/p/C9Xgh19OWUF/?img_index=6" },
+            { src: "/Assets/imagens/cart-1.JPG", link: "/Assets/imagens/cart-1.JPG" },
+            { src: "/Assets/imagens/cart-2.JPG", link: "/Assets/imagens/cart-2.JPG" },
+          ],
+          instagram: "https://www.instagram.com/eter.tech",
+          whatsapp: "https://wa.me/+5583988408009",
+        },
+        5: {
+          title: "Projeto 5: Granja Ovos Cirilo",
+          description: "Desenvolvimento da identidade visual da Granja Ovos Cirilo, cartões de vista, logo.",
+          images: [
+            { src: "/Assets/icons/logo-ovos.JPG", link: "/Assets/icons/logo-ovos.JPG" },
+            { src: "/Assets/imagens/cart-ovo-1.JPG", link: "/Assets/imagens/cart-ovo-1.JPG" },
+            { src: "/Assets/imagens/cart-ovo-2.JPG", link: "/Assets/imagens/cart-ovo-2.JPG" },
+          ],
+          instagram: "https://www.instagram.com/granjacirilopb",
+          whatsapp: "https://wa.me/+5583988408009",
+        },
+        6: {
+          title: "Projeto 6: JR Premoldados",
+          description: "Desenvolvimento da identidade visual da JR Premoldados, cartões de visita e mockup.",
+          images: [
+            { src: "/Assets/imagens/JR-cartão.jpg", link: "/Assets/imagens/JR-cartão.jpg" },
+            { src: "/Assets/imagens/jr-parede.jpg", link: "/Assets/imagens/jr-parede.jpg" },
+            { src: "/Assets/imagens/jr-mockup.jpg", link: "/Assets/imagens/jr-mockup.jpg" },
+          ],
+          instagram: "https://www.instagram.com/jr.premoldados",
+          whatsapp: "https://wa.me/+5583987313758",
         },
     };
 
@@ -131,4 +170,21 @@ document.addEventListener('DOMContentLoaded', function () {
       modal.style.display = "none";
     }
   };
+
+
+  window.onscroll = function() {
+    const backToTopButton = document.getElementById("backToTop");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      backToTopButton.style.display = "flex";
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  };
   
+  // Voltar suavemente ao topo
+  document.getElementById("backToTop").onclick = function() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
