@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     if (!document.querySelector('header')) {
-      fetch('/Components/Header/header.html')  
+      fetch('/Components/header.html')  
         .then(response => {
           if (!response.ok) {
             throw new Error('Erro ao carregar o header: ' + response.status);
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
   document.addEventListener('DOMContentLoaded', function () {
     if (!document.querySelector('footer')) {
-      fetch('/Components/Footer/footer.html')
+      fetch('/Components/footer.html')
         .then(response => {
           if (!response.ok) {
             throw new Error('Erro ao carregar o footer: ' + response.status);
