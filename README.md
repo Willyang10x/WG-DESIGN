@@ -1,4 +1,5 @@
-![banner-wg2](https://github.com/user-attachments/assets/df34a03e-b569-4b39-bdc1-6224b825cad5)
+![banner-wg](https://github.com/user-attachments/assets/4b53fe20-47aa-4c60-9ab9-cee9ee66cc5c)
+
 
 # WG - Designer 🎨
 Este é o portfólio online de **Willyan Gabriel**, um designer apaixonado por criar experiências visuais únicas e impactantes. O site apresenta uma série de projetos e serviços oferecidos, bem como artes criativas desenvolvidas ao longo da carreira.
@@ -59,4 +60,5 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](./LIC
   - Instagram: [Clique aqui](https://www.instagram.com/willdsg07/)
   - WhatsApp: Clique aqui [Clique aqui](https://wa.me/+5583988688864)
 
-![banner-wg](https://github.com/user-attachments/assets/8eadfdf5-3b83-4a55-9876-58ccaec22c43)
+![banner-wg2](https://github.com/user-attachments/assets/2c516716-2cc4-47a1-a251-111da905b714)
+
